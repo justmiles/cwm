@@ -1,0 +1,29 @@
+{
+  "name": "cwm",
+  "version": "0.0.1",
+  "description": "CloudWatch Manager - enable and disable alarms",
+  "bin": {
+    "cwm": "index.coffee"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "build": "npm install && ./node_modules/coffee-script/bin/coffee -o build -c index.coffee && ./node_modules/pkg/lib-es5/bin.js -t node6-linux -d build/index.js -o build/cwm"
+  },
+  "author": "justmiles",
+  "devDependencies": {
+    "pkg": "^4.2.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.133.0",
+    "coffee-script": "^1.12.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justmiles/cwm.git"
+  },
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/justmiles/cwm/issues"
+  },
+  "homepage": "https://github.com/justmiles/cwm#readme"
+}
